@@ -153,6 +153,16 @@ shiftOut = exports.shiftOut = function(dataPin, clockPin, bitOrder, val)
   }
 };
 
+min = exports.min = function(value1, value2)
+{
+    return Math.min(value1, value2);
+}
+
+max = exports.max = function(value1, value2)
+{
+    return Math.max(value1, value2);
+}
+
 // Wait for some time
 if(fibers.exists) {
     delay = exports.delay = function(milliseconds)
